@@ -33,7 +33,6 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"])
 	} 	else {
 			$pesan = "Data Cannot Send";
 		}
-}
 ?>
 
 </body>

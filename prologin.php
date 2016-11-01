@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,14 +28,15 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 		if ($result->num_rows==1){
 			$_SESSION["username"] = $username;
 			header("Location: promain.html");
+		} else {
+			echo "<script>alert('Username and Password Not Exists!')</script>";
+			echo "<script>window.location.href='prologin.html'</script>";
 		}
 	} else {
 		header("Location:www.google.com");
 	}
 } 	else {
-		echo '<script language="javascript">';
-		echo 'alert("Username or Password Wrong! Try Again!")';
-		echo '</script>';
+		echo '<script language="javascript">alert("Username or Password Wrong! Try Again!")</script>';
 	}
 ?>
 
