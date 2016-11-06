@@ -15,16 +15,22 @@
 		.header	{
 			position: absolute;
 			background: rgba(255,255,255,1);
-			width: 40%;
+			width: 615px;
 			height: 50px;
 			border-bottom: 1px solid;
 			border-left: 1px solid;
 			border-right: 1px solid;
 		}
-		.footer	{
-			position: fixed;
-			background: rgba(255,255,255,1);
 
+		.footer	{
+			position: absolute;
+			background: rgba(255,255,255,1);
+			width: 615px;
+			height: 50px;
+			border-left: 1px solid;
+			border-right: 1px solid;
+			border-top: 1px solid;
+			bottom: 0px;
 		}
 
 		.wrappertengah {
@@ -36,11 +42,15 @@
 
 		.isi	{
 			border:1px solid;
+			padding-left: 200px;
 			margin-right: 5px;
 			position:absolute;
 			top: 150px;
-			width: 615px;
+			width: 415px;
 			height: 500px;
+		}
+		th {
+			text-align: left; 
 		}
 
 		.dropdown:hover .dropdown-content {
@@ -71,7 +81,7 @@
 
 		.dropdown {
 			margin-top: 5px;
-			margin-left: 560px;
+			margin-left: 461px;
     		position: absolute;
     		display: inline-block;
 		}
@@ -102,4 +112,18 @@
 			transition:1s; 
 			background: rgba(0,0,0,0.2);
 			color: rgba(0,0,0,1);
+		}
+
+		.imagecontainer{
+			float: left;
+			width: 100px;
+		}
+
+		.imagecontainer img {
+			display: inline;
+			width: 45px;
+			height: 45px;
+			margin-left: 5px;
+			margin-top: 2px;
+			margin-bottom: 2px;
 		}

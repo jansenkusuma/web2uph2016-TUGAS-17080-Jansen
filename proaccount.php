@@ -29,6 +29,9 @@ $rows = $query->get_result();
 <div class="wrapper">
 	<div class="wrappertengah">
 		<div class="header">
+			<div class="imagecontainer">
+				<a href="promain.html"><img src="diary.png"></a>
+			</div>
 			<div class="dropdown">
  				<button class="dropbtn"><p class="entypo-dot-3"></p></button>
   					<div class="dropdown-content">
@@ -44,10 +47,10 @@ $rows = $query->get_result();
 					$url_delete = "prodelete.php?username=" . $row['username'];
 
 					echo "<table>";
-					echo "<tr><th>Username</th><td>" . $row['username'] . "</td></tr>";
-					echo "<tr><th>Fullname</th><td>" . $row['fullname'] . "</td></tr>";
-					echo "<tr><th>Email</th><td>" . $row['email'] . "</td></tr>";
-					echo "<tr><td>
+					echo "<tr><th>Username :</th><td>" . $row['username'] . "</td></tr>";
+					echo "<tr><th>Fullname :</th><td>" . $row['fullname'] . "</td></tr>";
+					echo "<tr><th>Email :</th><td>" . $row['email'] . "</td></tr>";
+					echo "<tr><td colspan='2'>
 					<a href='" . $url_edit . "'><button>Update Data</button></a> 
 					<a href='" . $url_delete . "'><button>Hapus</button></a>
 					</td></tr>";

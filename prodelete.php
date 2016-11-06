@@ -32,7 +32,7 @@ $result = $query->execute();
 
 if($result){
 	echo "<p>Data user berhasil dihapus</p>";
-	echo "<a href=proaccount.php><button>BACK</button></a>";
+	echo "<a href=prologin.html><button>BACK</button></a>";
 }
 else
 	echo "<p>Gagal menghapus data produk</p>";

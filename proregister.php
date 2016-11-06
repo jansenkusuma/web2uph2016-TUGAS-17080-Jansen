@@ -6,9 +6,8 @@
 <body>
 <?php
 require "prodb.php";
-$pesan = null;
 
-if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"]) && isset($_POST["password"])) {
+if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["cpassword"])) {
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$username = $_POST["username"];
@@ -28,10 +27,12 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"])
 			header("Location: prologin.html");
 		}
 		} else {
-			$pesan = "Cannot Register New Member! Try Again";
+			echo "<script>alert('Password doesn't match!')</script>";
+			echo "<script>window.location.href='proregister.html'</script>";
 		}
 	} 	else {
-			$pesan = "Data Cannot Send";
+			echo "<script>alert('Cannot Register New Member!')</script>";
+			echo "<script>window.location.href='proregister.html'</script>";
 		}
 ?>
 
