@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Contoh update data ke database</title>
-</head>
-<body>
-
 <?php
 require_once "prodb.php";
 
@@ -37,6 +30,3 @@ if($result){
 else
 	echo "<p>Gagal menghapus data produk</p>";
 ?>
-
-</body>
-</html>

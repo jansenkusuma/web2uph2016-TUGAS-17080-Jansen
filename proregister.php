@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Register</title>
-</head>
-<body>
 <?php
 require "prodb.php";
 
@@ -35,6 +29,3 @@ if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["username"])
 			echo "<script>window.location.href='proregister.html'</script>";
 		}
 ?>
-
-</body>
-</html>

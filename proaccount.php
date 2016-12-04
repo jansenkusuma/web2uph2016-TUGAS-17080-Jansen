@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="main.css">
@@ -6,7 +9,6 @@
 </head>
 <body>
 <?php
-session_start();
 if (isset($_SESSION["username"])){
 	$username = $_SESSION["username"];
 }else{
@@ -30,7 +32,7 @@ $rows = $query->get_result();
 	<div class="wrappertengah">
 		<div class="header">
 			<div class="imagecontainer">
-				<a href="promain.html"><img src="diary.png"></a>
+				<a href="promain.php"><img src="diary.png"></a>
 			</div>
 			<div class="dropdown">
  				<button class="dropbtn"><p class="entypo-dot-3"></p></button>

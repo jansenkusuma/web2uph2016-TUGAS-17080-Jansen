@@ -9,7 +9,7 @@ session_start();
 </head>
 <body>
 <?php
-require "prodb.php";
+require_once "prodb.php";
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
 	$username = $_POST["username"];
@@ -27,7 +27,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 
 		if ($result->num_rows==1){
 			$_SESSION["username"] = $username;
-			header("Location: promain.html");
+			header("Location: promain.php");
 		} else {
 			echo "<script>alert('Username and Password Not Exists!')</script>";
 			echo "<script>window.location.href='prologin.html'</script>";
